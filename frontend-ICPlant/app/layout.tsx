@@ -1,50 +1,28 @@
-/* eslint-disable @next/next/no-img-element */
-import type { Metadata } from "next";
-// panggil file "style.module.css"
-import style from "./styles/style.module.css";
+import type { Metadata } from 'next';
 
-// panggil file tailwind
-import "tailwindcss/tailwind.css";
-
-// const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "View Data Mahasiswa",
-};
+  title: 'IC.Plant',
+  description: 'IC.Plant with various plants',
+}
 
-export default function MainLayout({
+export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* tambahkan favicon */}
-        <link
-          rel="shortcut icon"
-          href="../images/favicon.png"
-          type="image/x-icon"
-        />
-        {/*  tambahkan cdn fontawesome*/}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />
-      </head>
-
-      <body className={style.layout}>
-        <header className={`${style.header}`}>
-          <img src="../images/logo.png" alt="Logo" />
-        </header>
-
-        {/* <div class="abc def hij"></div> */}
-        <section className={`${style.content} ${style.content_bg}`}>
+      <body>
+        <Navbar />
+        <main className="relative overflow-hidden">
           {children}
-        </section>
-
-        <footer className={style.footer}>&copy; 2024 | PWBS - IF 21 CDX</footer>
+        </main>
+        <Footer />
       </body>
     </html>
-  );
+  )
 }
