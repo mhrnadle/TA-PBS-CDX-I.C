@@ -69,11 +69,11 @@ const SearchBar = () => {
       </div>
       <div className='searchbar__item'>
         <Image
-          src='/model-icon.png'
+          src='/model-icon.jpg'
           width={25}
           height={25}
           className='absolute w-[20px] h-[20px] ml-4'
-          alt='car model'
+          alt='plant model'
         />
         <input
           type='text'

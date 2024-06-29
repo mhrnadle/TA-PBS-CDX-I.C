@@ -1,94 +1,76 @@
 export const manufacturers = [
-  "Acura",
-  "Alfa Romeo",
-  "Aston Martin",
-  "Audi",
-  "Bentley",
-  "BMW",
-  "Buick",
-  "Cadillac",
-  "Chevrolet",
-  "Chrysler",
-  "Citroen",
-  "Dodge",
-  "Ferrari",
-  "Fiat",
-  "Ford",
-  "GMC",
-  "Honda",
-  "Hyundai",
-  "Infiniti",
-  "Jaguar",
-  "Jeep",
-  "Kia",
-  "Lamborghini",
-  "Land Rover",
-  "Lexus",
-  "Lincoln",
-  "Maserati",
-  "Mazda",
-  "McLaren",
-  "Mercedes-Benz",
-  "MINI",
-  "Mitsubishi",
-  "Nissan",
-  "Porsche",
-  "Ram",
-  "Rolls-Royce",
-  "Subaru",
-  "Tesla",
-  "Toyota",
-  "Volkswagen",
-  "Volvo",
+  "Rumput Laut (Seaweed)",
+  "Padina",
+  "Zostera (Rumput Laut)",
+  "Halimeda",
+  "Kelp",
+  "Rumput Laut Kepala Ranting",
+  "Sargassum",
+  "Rumput Laut Neptunus",
+  "Sea Fingers",
+  "Seaweed Pencil",
 ];
 
-export const yearsOfProduction = [
-  { title: "Year", value: "" },
-  { title: "2015", value: "2015" },
-  { title: "2016", value: "2016" },
-  { title: "2017", value: "2017" },
-  { title: "2018", value: "2018" },
-  { title: "2019", value: "2019" },
-  { title: "2020", value: "2020" },
-  { title: "2021", value: "2021" },
-  { title: "2022", value: "2022" },
-  { title: "2023", value: "2023" },
+export const Depth = [
+  { title: "Depth", value: "" },
+  { title: "1-5 M", value: "1-5 M" },
+  { title: "6-10 M", value: "6-10 M" },
+  { title: "11-15 M", value: "11-15 M" },
+  { title: "16-20 M", value: "16-20 M" },
+  { title: "21-25 M", value: "21-25 M" },
+  { title: "26-30 M", value: "26-30 M" },
+  { title: "46-50 M", value: "46-50 M" },
+  { title: "46-50 M", value: "46-50 M" },
 ];
 
-export const fuels = [
+export const LatinName = [
   {
-    title: "Fuel",
+    title: "Latin Name",
     value: "",
   },
   {
-    title: "Gas",
-    value: "Gas",
+    title: "Phaeophyta",
+    value: "Phaeophyta",
   },
   {
-    title: "Electricity",
-    value: "Electricity",
+    title: "Padina pavonica",
+    value: "Padina pavonica",
   },
+  {
+      title: "Zostera marina",
+      value: "Zostera marina",
+    },
+    {
+      title: "Halimeda spp",
+      value: "Halimeda spp",
+    },
+    {
+      title: "Macrocystis pyrifera",
+      value: "Macrocystis pyrifera",
+    },
+    {
+      title: "Caulerpa spp",
+      value: "Caulerpa spp",
+    },
+    {
+      title: "Sargassum spp",
+      value: "Sargassum spp",
+    },
+    {
+      title: "Posidonia oceanica",
+      value: "Posidonia oceanica",
+    },
+    {
+      title: "Codium spp",
+      value: "Codium spp",
+    },
+    {
+      title: "Dictyota spp",
+      value: "Dictyota spp",
+    },
 ];
 
 export const footerLinks = [
-  {
-    title: "About",
-    links: [
-      { title: "How it works", url: "/" },
-      { title: "Featured", url: "/" },
-      { title: "Partnership", url: "/" },
-      { title: "Bussiness Relation", url: "/" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { title: "Events", url: "/" },
-      { title: "Blog", url: "/" },
-      { title: "Podcast", url: "/" },
-      { title: "Invite a friend", url: "/" },
-    ],
-  },
   {
     title: "Socials",
     links: [

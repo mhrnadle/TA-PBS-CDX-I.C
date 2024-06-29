@@ -17,23 +17,22 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
-          Find, book, rent a car—quick and super easy!
+          Discover the wonderfull of plants in the ocean world
         </h1>
 
         <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking
-          process.
+          The wonderfull of underwater plants that can be seen here, let's find it.
         </p>
 
         <CustomButton
-          title="Explore Cars"
+          title="Explore Plants"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}
         />
       </div>
       <div className="hero__image-container">
         <div className="hero__image">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          <Image src="/tanaman.png" alt="hero" fill className="object-contain" />
         </div>
 
         <div className="hero__image-overlay" />

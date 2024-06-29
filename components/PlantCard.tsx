@@ -3,38 +3,38 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import { calculateCarRent, generateCarImageUrl } from "@utils";
-import { CarProps } from "@types";
+import { calculateplantRent, generateplantImageUrl } from "@utils";
+import { plantProps } from "@types";
 import CustomButton from "./CustomButton";
-import CarDetails from "./CarDetails";
+import plantDetails from "./PlantDetails";
 
-interface CarCardProps {
-  car: CarProps;
+interface plantplantdProps {
+  plant: plantProps;
 }
 
-const CarCard = ({ car }: CarCardProps) => {
-  const { city_mpg, year, make, model, transmission, drive } = car;
+const plantplantd = ({ plant }: plantplantdProps) => {
+  const { city_mpg, year, make, model, transmission, drive } = plant;
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const carRent = calculateCarRent(city_mpg, year);
+  const plantRent = calculateplantRent(city_mpg, year);
 
   return (
-    <div className="car-card group">
-      <div className="car-card__content">
-        <h2 className="car-card__content-title">
+    <div className="plant-plantd group">
+      <div className="plant-plantd__content">
+        <h2 className="plant-plantd__content-title">
           {make} {model}
         </h2>
       </div>
 
       <p className='flex mt-6 text-[32px] leading-[38px] font-extrabold'>
         <span className='self-start text-[14px] leading-[17px] font-semibold'>$</span>
-        {carRent}
+        {plantRent}
         <span className='self-end text-[14px] leading-[17px] font-medium'>/day</span>
       </p>
 
       <div className='relative w-full h-40 my-3 object-contain'>
-        <Image src={generateCarImageUrl(car)} alt='car model' fill priority className='object-contain' />
+        <Image src={generateplantImageUrl(plant)} alt='plant model' fill priority className='object-contain' />
       </div>
 
       <div className='relative flex w-full mt-2'>
@@ -45,17 +45,17 @@ const CarCard = ({ car }: CarCardProps) => {
               {transmission === "a" ? "Automatic" : "Manual"}
             </p>
           </div>
-          <div className="car-card__icon">
+          <div className="plant-plantd__icon">
             <Image src="/tire.svg" width={20} height={20} alt="seat" />
-            <p className="car-card__icon-text">{drive.toUpperCase()}</p>
+            <p className="plant-plantd__icon-text">{drive.toUpperCase()}</p>
           </div>
-          <div className="car-card__icon">
+          <div className="plant-plantd__icon">
             <Image src="/gas.svg" width={20} height={20} alt="seat" />
-            <p className="car-card__icon-text">{city_mpg} MPG</p>
+            <p className="plant-plantd__icon-text">{city_mpg} MPG</p>
           </div>
         </div>
 
-        <div className="car-card__btn-container">
+        <div className="plant-plantd__btn-container">
           <CustomButton
             title='View More'
             containerStyles='w-full py-[16px] rounded-full bg-primary-blue'
@@ -66,9 +66,9 @@ const CarCard = ({ car }: CarCardProps) => {
         </div>
       </div>
 
-      <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
+      {/* <plantDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} plant={plant} /> */}
     </div>
   );
 };
 
-export default CarCard;
+export default plantplantd;

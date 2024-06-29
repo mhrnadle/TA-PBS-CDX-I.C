@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react";
 
-export interface CarProps {
+export interface plantProps {
   city_mpg: number;
   class: string;
   combination_mpg: number;
@@ -16,6 +16,8 @@ export interface CarProps {
 }
 
 export interface FilterProps {
+  LatinName: string;
+  Depth: number;
   manufacturer?: string;
   year?: number;
   model?: string;
@@ -27,7 +29,7 @@ export interface HomeProps {
   searchParams: FilterProps;
 }
 
-export interface CarCardProps {
+export interface plantcardProps {
   model: string;
   make: string;
   mpg: number;
